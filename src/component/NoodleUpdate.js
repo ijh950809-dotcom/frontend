@@ -20,7 +20,7 @@ function NoodleUpdate(props) {
 
 
   useEffect(()=>{
-    axios.get(`http://localhost:9070/noodle/${num}`)
+    axios.get(`https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/noodle/${num}`)
       .then(res=>{
         console.log('서버응답값:',res.data);
         setForm(res.data);
@@ -38,7 +38,7 @@ function NoodleUpdate(props) {
   const handleSubmit=(e)=>{
     e.preventDefault();
 
-    axios.put(`http://localhost:9070/noodle/noodleupdate/${num}`,{
+    axios.put(`https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/noodle/noodleupdate/${num}`,{
       name:form.name,
       company:form.company,
       kind:form.kind,
@@ -137,5 +137,6 @@ function NoodleUpdate(props) {
     </main>
   );
 }
+
 
 export default NoodleUpdate;
