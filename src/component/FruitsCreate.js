@@ -27,7 +27,7 @@ function FruitsCreate(props) {
   const handleSubmit = (e) => {
     e.preventDefault();//새로고침방지
     //비동기로 backend server에 데이터 넘김
-    axios.post('http://localhost:9070/fruits', form)
+    axios.post('https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/fruits', form)
       .then(() => {//통신이 성공적으로 이루어지면
         //setFruitsCount(count => count + 1);//숫자증가
 
@@ -94,5 +94,6 @@ function FruitsCreate(props) {
     </>
   );
 }
+
 
 export default FruitsCreate;
