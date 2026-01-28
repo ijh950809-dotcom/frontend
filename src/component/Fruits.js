@@ -66,7 +66,7 @@ function Fruits(props) {
   const deleteData = (num) => {
     if (window.confirm('정말삭제하시겠습니까?')) {
       axios
-        .delete(`http://localhost:9070/fruits/${num}`)
+        .delete(`https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/fruits/${num}`)
         .then(() => {//성공시
           alert('삭제되었습니다.');
           loadData();//삭제후 다시 불러와서 목록을 새로고침
@@ -237,3 +237,4 @@ function Fruits(props) {
 
 
 export default Fruits;
+
