@@ -42,7 +42,7 @@ function Noodle(props) {
   //2. 데이터리스트 비동기로 받아서 출력
   const loadData = () => {
     axios
-      .get('http://localhost:9070/noodle')
+      .get('https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/noodle')
       .then
       (res => {
         setData(res.data)
@@ -213,5 +213,6 @@ function Noodle(props) {
 
   );
 }
+
 
 export default Noodle;
