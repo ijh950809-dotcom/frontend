@@ -20,7 +20,7 @@ function BookStoreUpdate(props) {
   const navigate = useNavigate();
 
   useEffect(()=>{
-    axios.get(`http://localhost:9070/bookstore/${code}`)
+    axios.get(`https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/bookstore/${code}`)
     //성공이면
     .then(res=>{
       console.log('서버응답값 : ', res.data);
@@ -164,5 +164,6 @@ function BookStoreUpdate(props) {
     </main>
   );
 }
+
 
 export default BookStoreUpdate;
