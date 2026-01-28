@@ -16,7 +16,7 @@ function GoodsUpdate(props) {
 
   //2. 백엔드 서버측으로 넘길 데이터를 통신해서 성공, 실패여부를 출력한다.
   useEffect(()=>{
-    axios.get(`http://localhost:9070/goods/${g_code}`)
+    axios.get(`https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/goods/${g_code}`)
     //성공이면 출력
     .then(res=>{
       console.log('서버 응답 값 : ', res.data);
@@ -81,5 +81,6 @@ function GoodsUpdate(props) {
     </main>
   );
 }
+
 
 export default GoodsUpdate;
