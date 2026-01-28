@@ -46,7 +46,7 @@ const Goods = () => {
   const deleteData = (g_code) => {//매개변수로 g_code값 받는다
     if (window.confirm('정말삭제하시겠습니까?')) {
       axios//서버에 delete요청을 전송
-        .delete(`http://localhost:9070/goods/${g_code}`)
+        .delete(`https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/goods/${g_code}`)
         //성공일때 아래내용을 실행함
         .then(() => {
           alert('데이터가 성공적으로 삭제되었습니다.');
@@ -177,3 +177,4 @@ const Goods = () => {
 
 
 export default Goods;
+
