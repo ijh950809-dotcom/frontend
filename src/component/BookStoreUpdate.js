@@ -43,7 +43,7 @@ function BookStoreUpdate(props) {
     e.preventDefault();//새로고침 방지
 
     //비동기 방식으로 업데이트할 내용을 백엔드로 전달함
-    axios.put(`http://localhost:9070/bookstore/bookstoreupdate/${code}`, {
+    axios.put(`https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/bookstore/bookstoreupdate/${code}`, {
       name:form.name,//서점명
       area1:form.area1,
       area2:form.area2,
@@ -167,3 +167,4 @@ function BookStoreUpdate(props) {
 
 
 export default BookStoreUpdate;
+
