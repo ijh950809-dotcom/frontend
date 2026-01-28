@@ -27,7 +27,7 @@ const Goods = () => {
   const loadData = () => {
     //비동기통신사용
     axios
-      .get('http://localhost:9070/goods')
+      .get('https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/goods')
       //성공시데이터를 저장
       .then
       (res => {
@@ -174,5 +174,6 @@ const Goods = () => {
     </main>
   );
 }
+
 
 export default Goods;
