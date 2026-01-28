@@ -19,7 +19,7 @@ function FruitsUpdate(props) {
   //서버측에 넘길 num값을 비동기로 통신하여 성공, 실패 여부 출력하고
   //콤포넌트가 마운트 될 때 해당 num값에 데이터를 조회하여 출력함
   useEffect(()=>{
-    axios.get(`http://localhost:9070/fruits/${num}`)
+    axios.get(`https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/fruits/${num}`)
     //성공이면
     .then(res=>{
       console.log('서버응답값:', res.data);
@@ -121,5 +121,6 @@ function FruitsUpdate(props) {
     </main>
   );
 }
+
 
 export default FruitsUpdate;
