@@ -8,7 +8,7 @@ function QuestionList(props) {
   //2. 문의하기에 등록된 글 가져오기
   const loadData = () => {
     axios//비동기로
-      .get('http://localhost:9070/question')//백엔드 서버에 주소 요청
+      .get('https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/question')//백엔드 서버에 주소 요청
       .then(res => setData(res.data))//성공시 데이터 저장
       .catch(err => console.log(err))//실패시 에러 출력
   }
@@ -61,5 +61,6 @@ function QuestionList(props) {
     </section >
   );
 }
+
 
 export default QuestionList;
