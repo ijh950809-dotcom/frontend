@@ -35,7 +35,7 @@ function Question(props) {
     }
     //5. 전송하기 (비동기로) 보내는거 
     //get(조회), put(수정), (post)입력, delete(삭제)
-    axios.post('http://localhost:9070/api/question', formData)
+    axios.post('https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/api/question', formData)
       .then(() => {
         setQuestionCount(count => count + 1);//숫자증가
         alert('문의사항이 접수되었습니다.');
@@ -129,5 +129,6 @@ function Question(props) {
     </>
   );
 }
+
 
 export default Question;
