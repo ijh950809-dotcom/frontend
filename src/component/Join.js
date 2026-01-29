@@ -18,7 +18,7 @@ function Join(props) {
   //회원가입자 수 뱃지
   // const loadData = () => {
   //   axios
-  //     .get('http://localhost:9070/join')
+  //     .get('https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/join')
   //     .then
   //     (res => {
   //       setData(res.data)
@@ -55,7 +55,7 @@ function Join(props) {
       return;
     }
     try {
-      await axios.post('http://localhost:9070/join', {
+      await axios.post('https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/join', {
         username: form.username,
         password: form.password
       });
@@ -121,5 +121,6 @@ function Join(props) {
     </main>
   );
 }
+
 
 export default Join;
