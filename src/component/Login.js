@@ -20,7 +20,7 @@ function Login(props) {
   //회원수 뱃지
   // const loadData = () => {
   //   axios
-  //     .get('http://localhost:9070/join')
+  //     .get('https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/join')
   //     .then
   //     (res => {
   //       setData(res.data)
@@ -44,7 +44,7 @@ function Login(props) {
     e.preventDefault();//새로고침 방지
 
     try {//성공시 실행내용
-      const res = await axios.post('http://localhost:9070/login', form);
+      const res = await axios.post('https://port-0-backend-express-server-mkvwe8rkb7d9ea30.sel3.cloudtype.app/login', form);
       //사용자인증이 끝나면 '토큰'을 발급한다.
       localStorage.setItem('token', res.data.token);
       alert('로그인성공');
@@ -122,5 +122,6 @@ function Login(props) {
     </main>
   );
 }
+
 
 export default Login;
